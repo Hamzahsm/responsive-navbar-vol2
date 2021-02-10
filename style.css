@@ -59,6 +59,7 @@ a.active, a:hover {
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;   
+    /* if you want to look it how the design, make sure your display to be set block */
     display: none;
 }
 
@@ -66,3 +67,59 @@ a.active, a:hover {
     display: none; 
 }
 
+/* owh yeah we done to make a hamburger icon!! great jobs! But, is we finished yet? no bro! be patient. */
+
+/* our next step is creat a media query, this is will make a responsible website in many different wide screen */
+
+/* this media screen is tablet or as known as medium screen */
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px; 
+    }
+    
+    nav ul li a {
+        font-size: 16px; 
+    }
+}
+
+/* this media screen for the smallest */
+@media (max-width: 858px) {
+    .check-btn {
+        /* yeaaa!! your hamburger-icon will appear at this width screen! congratulation! */
+        display: block;
+    }
+    
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        color: white;
+        top: 80px;
+        /* margin-left: -100% mean that you will hiding this element until the user click the button (hamburger-icon) */
+        margin-left: -100%;
+        text-align: center; 
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a.active,a:hover {
+        background: none;
+        color: white; 
+    } 
+
+    /* when the user clicked the button (hamburge-icon), the <ul> element or our menu elemenet will show up in the screen and user will see it. cool! */
+    #check:checked ~ ul {
+        margin-left: 0; 
+    }
+} 
