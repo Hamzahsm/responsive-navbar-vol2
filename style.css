@@ -123,3 +123,13 @@ a.active, a:hover {
         margin-left: 0; 
     }
 } 
+
+/* god damn it!! we've made a crazy effect to our hamburger-icon. The users will not struggle anymore using our web! but , did we done yet? no, we didn't */ 
+
+/* this design if for our carousal  */
+section {
+    background: url(images/1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px); 
+    margin-top: 80px;
+}
