@@ -51,4 +51,18 @@ a.active, a:hover {
 }
 /* owh yah! we've made cool navbar!  */
 
-/* now let's create a hamburger menu!! this is will appear when your user have a small screen */
+/* what's next? let's create a hamburger icon!! this is will appear when your user have a small screen */
+.check-btn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;   
+    display: none;
+}
+
+#check {
+    display: none; 
+}
+
