@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+}
+
+/* your header parent of all your menu is start here */
+nav {
+    background: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+label.logo {
+    color: white;
+    line-height: 80px;
+    font-size: 1.5rem;
+    padding: 0 100px; 
+    font-weight: 100px; 
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px; 
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 100px;
+}
+
+a.active, a:hover {
+    background: white;
+    transition: 0.5s;
+    color: black; 
+}
+/* owh yah! we've made cool navbar!  */
